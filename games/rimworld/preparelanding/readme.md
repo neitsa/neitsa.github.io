@@ -18,5 +18,5 @@ Manual
     * Filtered Tiles Tab
     * World Info Tab
     * Options Tab
-    
+* [Filtering](filtering.md)
 

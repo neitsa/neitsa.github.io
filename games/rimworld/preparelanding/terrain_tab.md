@@ -16,7 +16,7 @@ The list of available filters in this tab are:
     - Summer Movement Time
     - Winter Movement Time
 - Stone Types
-- Coastal Tiles
+- [Coastal Tiles](#coastal-tiles)
 - Elevation
 - Time Zone
 
@@ -98,3 +98,7 @@ The vanilla game offers 4 river types (from the biggest to smallest):
 See multi-state `[TODO]` option on how to proceed with this type of filter.
 
 The `Reset All` button reset all the road filters to their default state (Partial state).
+
+
+Coastal Tiles
+-------------
