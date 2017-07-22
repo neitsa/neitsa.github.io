@@ -11,7 +11,7 @@ Manual
 ------
 
 * Installing
-* Starting
+* [Starting](starting.md)
 * The Main Window
     * Terrain Tab
     * Temperature Tab
