@@ -10,10 +10,10 @@ PrepareLanding
 Manual
 ------
 
-* Installing
+* [Installing](installing.md)
 * [Starting](starting.md)
 * The Main Window
-    * Terrain Tab
+    * [Terrain Tab](terrain_tab.md)
     * Temperature Tab
     * Filtered Tiles Tab
     * World Info Tab
