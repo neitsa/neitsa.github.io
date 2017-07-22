@@ -3,10 +3,9 @@
 There are four types of filter in `PrepareLanding`:
 
 - [Single choice](#single-choice) filters
-- [Three state](#three-state) filters
+- [Three state](#three-states) filters
 - [Orderable three state](#orderable-three-state) filters
 - [Usable numeric](#usable-numeric) filters
-
 
 ## Single Choice
 
@@ -25,15 +24,17 @@ Three state items have, as their name implies, three possible states:
 - Partial: ![ON state](assets/partial_state.png)
 
 The `On` state means:
-    - I absolutely *want* this option when filtering tiles
-    
+    - I absolutely **want** this option when filtering tiles
+
 The `Off` state means:
-    - I absolutely *do not want* this option when filtering tiles    
-    
+    - I absolutely **do not want** this option when filtering tiles
+
 The `Partial` state means:
-    - I do not care if this option is available or not when filtering tiles
-    
-    
+    - I **do not care** if this option is available or not when filtering tiles
+
+Note that when clicking on a state item, the order of appearance is: `Partial` -> `Off` -> `On` -> `Partial` -> etc.
+
+
 ### Three states: simple example
 
 Let's take an example with the [Coastal Tile](terrain.md#coastal-tiles) filter on the [Terrain Tab](terrain.md). (`World Map -> Version: A17b; Seed: flo; World coverage: 5%`)
@@ -98,10 +99,39 @@ Notice how all tiles with or without a `Dirt Path` are selected, but the tiles w
 
 ![road filter: new filter result](assets/exemple_three_state2_5.png)
 
-## Orderable Three State
+## Orderable Three States
 
-`TODO`
+The orderable three state filter works like the [three state filter](#three-states) except the order itself can be changed.
+
+Here is a live example:
+
+![reorderable three state filter](assets/stone_reordering_optimized.gif)
+
+Note that the reordering is only meaningful for the `On` and `Partial` states (the `Off` state, by definition, has no precise order).
+
+The above example means:
+
+- Filter tiles that have `Sandstone` in first position
+- Filter tiles that have `Limestone` in second position
+- Filter tiles that may or may not have `Slate` in third position
+- Do not include tiles that have `Granite`
+- Do not include tiles that have `Marble`
+
+As of now, only the `Stone type` filter is reorderable.
 
 ## Usable Numeric
 
-`TODO`
+A `usable numeric` filter is comprised of three items:
+
+- A on / off button for the filter usage
+    - if `on` the filter is taken into account
+    - if `off` the filter is not included
+- Two numeric fields (int or float) with a min and max value.
+
+Note: integer fields don't let you enter the decimal point while float fields allow you to do so.
+
+![usable numeric filter: example](assets/select_elevation.png)
+
+Do not forget to click on the `Use` button if you want to use the filter!
+
+![usable numeric filter: use](assets/usable_numeric.gif)

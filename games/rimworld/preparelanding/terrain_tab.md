@@ -11,14 +11,14 @@ The list of available filters in this tab is:
 - [Terrain Type](#terrain-type)
 - [Road Type](#road-type)
 - [River Type](#river-type)
-- [Movement Times](#movement_times)
+- [Movement Times](#movement-times)
     - Current Movement Time
     - Summer Movement Time
     - Winter Movement Time
-- Stone Types
+- [Stone Type](#stone-type)
 - [Coastal Tiles](#coastal-tiles)
-- Elevation
-- Time Zone
+- [Elevation](#elevation)
+- [Time Zone](#time-zone)
 
 Biome Type
 ----------
@@ -29,7 +29,7 @@ Choose one of the available biomes, even custom ones from other mods, by clickin
 
 Once a biome is chosen, only tiles from that biome will be selected.
 
-The vanilla game offers 8 biomes where you can settle (please note that biomes that don't allow bases can't be filtered):
+The vanilla game offers height biomes where you can settle (please note that biomes that don't allow bases can't be filtered):
 
 - Arid Shrubland
 - Boreal Forest
@@ -73,7 +73,7 @@ Choose a combination of the available road types by clicking one or more of the 
 
 ![road selection](assets/select_road.png)
 
-The vanilla game offers 5 road types (from the smallest to the biggest):
+The vanilla game offers five road types (from the smallest to the biggest):
 
 - Dirt path
 - Dirt Road
@@ -81,7 +81,7 @@ The vanilla game offers 5 road types (from the smallest to the biggest):
 - Ancient asphalt road
 - Ancient asphalt highway
 
-See [three-state filtering](filtering.md#three-states) on how to proceed with this type of filter.
+See [three states filtering](filtering.md#three-states) on how to proceed with this type of filter.
 
 The `Reset All` button reset all the road filters to their default state (Partial state).
 
@@ -90,7 +90,7 @@ River Type
 
 Choose a combination of the available river types by clicking one or more of the three-state options.
 
-![road selection](assets/select_river.png)
+![river selection](assets/select_river.png)
 
 The vanilla game offers four river types (from the biggest to smallest):
 
@@ -99,44 +99,79 @@ The vanilla game offers four river types (from the biggest to smallest):
 - River
 - Creek
 
-See [three-state filtering](filtering.md#three-states) on how to proceed with this type of filter.
+See [three states filtering](filtering.md#three-states) on how to proceed with this type of filter.
 
-The `Reset All` button reset all the road filters to their default state (Partial state).
+The `Reset All` button reset all the river filters to their default state (Partial state).
 
 Movement Times
 --------------
 
 Movement times filter allows you to filter tiles by the average time it would take to traverse the whole tile (for a pawn with default movement speed), depending on the season.
 
-![road selection](assets/select_movement_times.png)
+![movement time selection](assets/select_movement_times.png)
 
 - Current movement time: the time it would take to traverse the tile during the current season.
-- Winter movement time: the time it would take to traverse the tile during the winter season.
-- Summer movement time: the time it would take to traverse the tile during the summer season.
+- Winter movement time: the time it would take to traverse the tile during the winter.
+- Summer movement time: the time it would take to traverse the tile during the summer.
 
 Do not forget to click on the `Use filter` if you want the filter to be taken into account.
 
-![road selection](assets/select_movement_times_2.png)
+![movement time selection: click on use](assets/select_movement_times_2.png)
 
-Stones Types
-------------
+Stone Type
+----------
 
 Choose a combination of the available stones types by clicking one or more of the three-state options.
 
-![road selection](assets/select_stone.png)
+![stone selection](assets/select_stone.png)
 
 The vanilla game offers five stone types:
 
-- Granit
+- Granite
 - Limestone
 - Marble
 - Sandstone
 - Slate
 
-See [three-state filtering](filtering.md#orderable-three-states) on how to proceed with this type of filter.
+Stone order is important because the game gives different stones types (by quantity) once in the game map.
 
-The `Reset All` button reset all the road filters to their default state (Partial state).
+You can see the stone order by clicking a tile on the world map and looking at the terrain tab, then searching for the "Stone Type" entry:
+
+![movement time selection](assets/stone_order_terrain_tab.png)
+
+Here, the above order means that there will be more `Sandstone` than `Limestone` than `Slate` stones.
+
+See [three states filtering](filtering.md#orderable-three-states) on how to proceed with this type of filter.
+
+The `Reset All` button reset all the stone filters to their default state (Partial state).
 
 Coastal Tiles
 -------------
 
+The coastal tile filter is a single [three-state filter](filtering.md#orderable-three-states).
+
+![Coastal filter](assets/select_coastal.png)
+
+- `On`: Filter tiles that are only coastal tiles
+- `Off`: Filter tiles that are not coastal tiles
+- `Partial`: both coastal and not coastal tiles match (default behavior)
+
+Note: a coastal tile is a tile with at least a pool of water (see or lakes) in an adjacent tile.
+
+Elevation
+---------
+
+Allows to filter tiles by their elevation (in meters). This filter is a [Usable Numeric filter](filtering.md#usable-numeric).
+
+![Elevation filter](assets/select_elevation.png)
+
+Note: technically the vanilla game allows tile elevation to be in the following range: [-500, 5000].
+
+Time Zone
+---------
+
+Allows to filter tiles by their time zone on the world map. This filter is a [Usable Numeric filter](filtering.md#usable-numeric).
+
+![Time Zone Filter](assets/select_time_zone.png)
+
+Note that the time zones are in the range [-12, 12].
