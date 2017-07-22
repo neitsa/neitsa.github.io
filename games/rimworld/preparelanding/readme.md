@@ -5,6 +5,8 @@ PrepareLanding
 
 **PrepareLanding** is a mod for the [RimWorld](https://rimworldgame.com/) game by [Ludeon studios](https://ludeon.com/blog/). It allows players to carefully choose their landing site before actually starting their colony.
 
+Choosing a landing site can be done by applying and using different set of filters, resulting in an unique combination of tiles, which are then highlighted on the world map.
+
 ![tiles blinking](assets/tiles_blink.gif)
 
 Manual
@@ -12,11 +14,12 @@ Manual
 
 * [Installing](installing.md)
 * [Starting](starting.md)
-* The Main Window
+* [The Main Window](starting.md#main-window)
     * [Terrain Tab](terrain_tab.md)
-    * Temperature Tab
+    * [Temperature Tab](temperature.md)
     * Filtered Tiles Tab
     * World Info Tab
-    * Options Tab
+    * Options Tab    
+    * [Minimized Window](starting.md#minimized-window)
 * [Filtering](filtering.md)
 

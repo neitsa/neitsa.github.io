@@ -59,11 +59,11 @@ Once you have chosen your world on the "Create World page" at the beginning of a
 
 As you can see in the above screenshot, once `PrepareLanding` is installed, a new button appears in the bottom button bar, simply labeled "Prepare Landing".
 
-![new menu](assets/bottom_buttons.png)
+![bottom buttons](assets/bottom_buttons.png)
 
-Clicking on this button display a new window with 5 tabs:
+Clicking on this button display a new window with five tabs:
 
-![Main Window](assets/terrain_tab.png)
+![terrain tab](assets/terrain_tab.png)
 
 * [Terrain](terrain_tab.md)
 * [Temperature](temperature_tab.md)
@@ -79,7 +79,30 @@ The main window itself (besides the tabs) has 4 buttons at the bottom:
 
 * `Filter Tiles`: apply all the filters chosen in the Terrain and Temperature tabs
 * `Reset Filters`: reset all filters to their default state
-* `Minimize`: minimize the main window. Helpfull once you have applied some filters and the main window is in your way.
+* `Minimize`: [minimize](#minimized-window) the main window. Helpfull once you have applied some filters and the main window is in your way.
 * `Close`: Close the main window. You can still make it reappear by clicking the `PrepareLanding` button at the bottom.
+
+Minimized Window
+----------------
+
+The main window can enter the minimized state by clicking the `Minimize` button at the bottom.
+
+By default, the minimized window is empty, with just a `Maximize` button:
+
+![Minimized Window: default](assets/minimized_window.png)
+
+If a set of filters have been applied, the minimized window also displays a set of the matching tiles with their coordinates:
+
+![Minimized Window: with tile list](assets/minimized_window_2.png)
+
+You can click on each of the item in the list to see where the tile is located on the world map.
+
+Note: in the above example;, the label with `0: 29 / 863` below the buttons means:
+
+- The total list of matching tiles has 863 entries
+- You are seeing entries 0 to 29 (30 entries)
+
+The number of viewable matching tiles in the minimized window is limited to 30 entries.
+
 
 

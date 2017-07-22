@@ -1,6 +1,10 @@
 # Filtering
 
-There are four types of filter in `PrepareLanding`:
+Filtering is done by selecting the filters available in the [terrain](terrain.md) and [temperature](temperature.md) tab.
+
+Once you have selected one or more filter, you can click the `Filter` button at the bottom of the main `PrepareLanding` window. The filtered tiles (according to the set of applied filters) are then highlighted on the world map.
+
+There are four categories of filters in `PrepareLanding`:
 
 - [Single choice](#single-choice) filters
 - [Three state](#three-states) filters
@@ -135,3 +139,7 @@ Note: integer fields don't let you enter the decimal point while float fields al
 Do not forget to click on the `Use` button if you want to use the filter!
 
 ![usable numeric filter: use](assets/usable_numeric.gif)
+
+# Live Filtering
+
+Instead of having to click on the `Filter` button, you also have the possibility to use `Live Filtering` by chossing this option in the `Options` tab of the main window. Be wary that this option may result in CPU heavy combination of filters in some cases, which might result in the game freezing for some time.

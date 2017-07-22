@@ -141,7 +141,7 @@ You can see the stone order by clicking a tile on the world map and looking at t
 
 Here, the above order means that there will be more `Sandstone` than `Limestone` than `Slate` stones.
 
-See [three states filtering](filtering.md#orderable-three-states) on how to proceed with this type of filter.
+See the [orderable three states filtering](filtering.md#orderable-three-states) on how to proceed with this type of filter.
 
 The `Reset All` button reset all the stone filters to their default state (Partial state).
 
