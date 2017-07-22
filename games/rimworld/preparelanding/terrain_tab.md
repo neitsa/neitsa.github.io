@@ -1,10 +1,14 @@
 Terrain Tab
 ===========
 
-The terrain tab deals with terrain-related filters. The list of available filters in this tab are:
+The terrain tab deals with terrain-related filters.
 
-- Biome Type
-- Terrain Type
+![Terrain tab](assets/terrain_tab.png)
+
+The list of available filters in this tab are:
+
+- [Biome Type](#biome-type)
+- [Terrain Type](#terrain-type)
 - Road Type
 - River Type
 - Movement Time
@@ -16,8 +20,8 @@ The terrain tab deals with terrain-related filters. The list of available filter
 - Elevation
 - Time Zone
 
-Biomes
-------
+Biome Type
+----------
 
 Choose one of the available biomes, even custom ones from other mods, by clicking the `Select Biome Type` button.
 
