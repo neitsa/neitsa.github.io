@@ -4,7 +4,7 @@ Starting
 Overview
 --------
 
-`PrepareLanding` allows you to choose tiles on the world map by applying and combining different set of filters. 
+`PrepareLanding` allows you to choose tiles on the world map by applying and combining different set of filters.
 
 Available filters are:
 
@@ -21,7 +21,7 @@ Available filters are:
     - Coastal Tiles
     - Elevation
     - Time Zone
-    
+
 * Temperature
     - Temperature
         - Average Temperature
@@ -30,7 +30,7 @@ Available filters are:
     - Growing Period
     - Rain Fall
     - Animals Can Graze Now
-    
+
 `PrepareLanding`is available during two moments in RimWorld:
 
 * Before you have started you colony, during the `Select landing site` page.
@@ -49,17 +49,21 @@ For example, you might want to filters:
 The `PrepareLanding` mod will then applied all these filters and highlight (and also build a list) of all the tiles that match your filters.
 
 At the end you are the master of your fate and ultimately decide in which tile you want to settle (and start your human-hat crafting colony).
-    
+
 Main Window
 -----------
 
 Once you have chosen your world on the "Create World page" at the beginning of a new game (Seed, Planet Coverage, etc.) the "Select Landing Site" page appears:
 
-![screenshot](assets/new_menu.png)
+![new menu](assets/new_menu.png)
 
-As you can see in the above screenshot, once `PrepareLanding` is installed, a new button appears in the bottom button bar, simply labeled "PrepareLanding". 
+As you can see in the above screenshot, once `PrepareLanding` is installed, a new button appears in the bottom button bar, simply labeled "Prepare Landing".
+
+![new menu](assets/bottom_buttons.png)
 
 Clicking on this button display a new window with 5 tabs:
+
+![Main Window](assets/terrain_tab.png)
 
 * [Terrain](terrain_tab.md)
 * [Temperature](temperature_tab.md)
