@@ -10,15 +10,13 @@ There are four types of filter in `PrepareLanding`:
 
 ## Single Choice
 
-
 The single choice selection is the simplest one: you only have a single choice to select your filter.
 
 For example, the biome selection is one of them as you can only choose one biome at a time.
 
 ![biome selection](assets/biomes.png)
 
-## Three states
-
+## Three States
 
 Three state items have, as their name implies, three possible states:
 
@@ -60,7 +58,7 @@ Now here is an overview of the world map where:
 
 Notice how in this state, coastal tiles were removed from the filtering.
 
-### Three states: advanced example
+### Three States: advanced example
 
 Here is an example of the [Road Types](terrain.md#road-types) filter on the [Terrain Tab](terrain.md). (`World Map -> Version: A17b; Seed: poker; World coverage: 5%`)
 
