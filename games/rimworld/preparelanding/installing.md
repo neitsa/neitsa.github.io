@@ -19,7 +19,7 @@ Installation
 
 `PrepareLanding` is not different from the other mods for the installation procedure.
 
-1. Download the latest version here
+1. Download the latest version [here from Github](https://github.com/neitsa/PrepareLanding/releases/latest)
 2. Open / extract the downloaded ZIP archive
 3. Move the `PRepareLanding` directory in the `\Mods` folder (**not** in `Mods\Core`!)
 4. Depending on your operating system the location of the `Mods`Folder can be different:
