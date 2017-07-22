@@ -1,11 +1,11 @@
 # Filtering
 
-There are four types of filter items in `PrepareLanding`:
+There are four types of filter in `PrepareLanding`:
 
-- Single choice items
-- Three states items
-- Orderable three states items
-- Usable numeric fields
+- [Single choice](#single-choice) filters
+- [Three state](#three-state) filters
+- [Orderable three state](#orderable-three-state) filters
+- [Usable numeric](#usable-numeric) filters
 
 
 ## Single Choice
@@ -99,3 +99,11 @@ On the other hand, with the following filter:
 Notice how all tiles with or without a `Dirt Path` are selected, but the tiles with the other road types are deselected:
 
 ![road filter: new filter result](assets/exemple_three_state2_5.png)
+
+## Orderable Three State
+
+`TODO`
+
+## Usable Numeric
+
+`TODO`
