@@ -1,10 +1,10 @@
 # Filtering
 
-There are 4 type of filter items in `PrepareLanding`:
+There are four types of filter items in `PrepareLanding`:
 
 - Single choice items
 - Three states items
-- Reorderable three states items
+- Orderable three states items
 - Usable numeric fields
 
 
@@ -13,18 +13,18 @@ There are 4 type of filter items in `PrepareLanding`:
 
 The single choice selection is the simplest one: you only have a single choice to select your filter.
 
-For example the biome sleection is one ofh them as you can only choose one biome at a time.
+For example, the biome selection is one of them as you can only choose one biome at a time.
 
-![biomes selection](assets/biomes.png)
+![biome selection](assets/biomes.png)
 
 ## Three states
 
 
-Three state items have, as their name implies, three possible state:
+Three state items have, as their name implies, three possible states:
 
 - On: ![ON state](assets/on_state.png)
 - Off: ![ON state](assets/off_state.png)
-- Partial: ![ON state](assets/parial_state.png)
+- Partial: ![ON state](assets/partial_state.png)
 
 The `On` state means:
     - I absolutely *want* this option when filtering tiles
@@ -49,7 +49,7 @@ Below is an overview of the world map where:
 
 ![Costal Tiles: On state](assets/exemple_three_state1_1.png)
 
-In this state, (as we are in the `On` state) all coastal tiles match. Note that this is the same behavior for the `Partial` state (which would mean: I don't care if it's coastal or not).
+In this state (as we are in the `On` state) all coastal tiles match. Note that this is the same behavior for the `Partial` state (which would mean: I don't care if it's coastal or not).
 
 Now here is an overview of the world map where:
 
@@ -60,8 +60,42 @@ Now here is an overview of the world map where:
 
 Notice how in this state, coastal tiles were removed from the filtering.
 
-### Three states: adavanced example
+### Three states: advanced example
 
-Here is an example with the [Road Types](terrain.md#road-types) filter on the [Terrain Tab](terrain.md). (`World Map -> Version: A17b; Seed: flo; World coverage: 5%`)
+Here is an example of the [Road Types](terrain.md#road-types) filter on the [Terrain Tab](terrain.md). (`World Map -> Version: A17b; Seed: poker; World coverage: 5%`)
+
+We start with a default filter for road types:
 
 ![road filter](assets/select_road.png)
+
+Below is an overview of the world map where:
+
+- The Boreal Temperate Forest biome is filtered (all Temperate Forest biome tiles are highlighted)
+- The road filter is its default state (all road filters are in their Partial State which means: **Tiles may or may not have a road.** (this implies that all tiles match).
+
+![road filter: default state](assets/exemple_three_state2_1.png)
+
+Now with the following road filter applied:
+
+![road filter: new filter](assets/exemple_three_state2_3.png)
+
+The above filter means:
+
+- Tiles must have a `Stone Road`
+- Tiles may or may not have a `Dirt Path`
+- I do not want tiles with a `Dirt Road`, `Ancient Asphalt Road`, `Ancient Asphalt`
+
+Notice the higher priority of the `Stone Road` filter: this immediately makes all tiles with a Stone Road a must have, deselecting all tiles **without** a `Stone Road`.
+
+![road filter: new filter result](assets/exemple_three_state2_2.png)
+
+On the other hand, with the following filter:
+
+![road filter: new filter](assets/exemple_three_state2_4.png)
+
+- Tiles may or may not have a `Dirt Path`
+- I do not want tiles with a `Dirt Road`, `Stone Road`, `Ancient Asphalt Road`, `Ancient Asphalt`
+
+Notice how all tiles with or without a `Dirt Path` are selected, but the tiles with the other road types are deselected:
+
+![road filter: new filter result](assets/exemple_three_state2_5.png)
