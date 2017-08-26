@@ -1,4 +1,5 @@
-﻿# Filtering
+﻿Filtering
+=========
 
 Filtering is done by selecting the filters available in the [terrain](terrain.md) and [temperature](temperature.md) tab.
 
