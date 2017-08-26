@@ -1,8 +1,7 @@
 Installing
 ==========
 
-Prerequisites
--------------
+## Prerequisites
 
 `PrepareLanding` requires the following mod to be installed:
 
@@ -14,8 +13,13 @@ Prerequisites
 
 Remember to put the `HugsLib` mod before `PrepareLanding` once you have clicked the in-game `Mod` button.
 
-Installation
-------------
+`PrepareLanding` also uses [Harmony](https://github.com/pardeike/Harmony) by Pardeike (this mod ships with HugsLib so you don't have to do anything).
+
+![Harmony](https://camo.githubusercontent.com/074bf079275fa90809f51b74e9dd0deccc70328f/68747470733a2f2f7332342e706f7374696d672e6f72672f3538626c31727a33392f6c6f676f2e706e67)
+
+## Installation
+
+### From Github
 
 `PrepareLanding` is not different from the other mods for the installation procedure.
 
@@ -38,3 +42,7 @@ Installation
     - Activate both `HugsLib` and `PrepareLanding` mods.
 
 ![Mods Window](assets/mods_window.png)
+
+### From Steam
+
+The `PrepareLanding` mod is also available on [Steam](http://steamcommunity.com/sharedfiles/filedetails/?id=1095331978). You just have to click on the subscribe button. If you whish to do so, you can also leave a comment and / or a rating.
