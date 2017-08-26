@@ -1,11 +1,10 @@
-# Filtering
+﻿# Filtering
 
 Filtering is done by selecting the filters available in the [terrain](terrain.md) and [temperature](temperature.md) tab.
 
 Once you have selected one or more filter, you can click the `Filter` button at the bottom of the main `PrepareLanding` window. The filtered tiles (according to the set of applied filters) are then highlighted on the world map.
 
 There are four categories of filters in `PrepareLanding`:
-
 - [Single choice](#single-choice) filters
 - [Three state](#three-states) filters
 - [Orderable three state](#orderable-three-state) filters
@@ -22,22 +21,18 @@ For example, the biome selection is one of them as you can only choose one biome
 ## Three States
 
 Three state items have, as their name implies, three possible states:
-
 - On: ![ON state](assets/on_state.png)
 - Off: ![ON state](assets/off_state.png)
 - Partial: ![ON state](assets/partial_state.png)
 
 The `On` state means:
     - I absolutely **want** this option when filtering tiles
-
 The `Off` state means:
     - I absolutely **do not want** this option when filtering tiles
-
 The `Partial` state means:
-    - I **do not care** if this option is available or not when filtering tiles
-
+    - I **do not care** if this option is available or not when filtering tiles.
+	
 Note that when clicking on a state item, the order of appearance is: `Partial` -> `Off` -> `On` -> `Partial` -> etc.
-
 
 ### Three states: simple example
 
@@ -46,7 +41,6 @@ Let's take an example with the [Coastal Tile](terrain.md#coastal-tiles) filter o
 ![coastal filter](assets/select_coastal.png)
 
 Below is an overview of the world map where:
-
 - the Boreal Forest biome is filtered (all Boreal Forest biome tiles are highlighted)
 - The coastal tile state is `On`, which means: **coastal tiles must be included**
 
@@ -55,7 +49,6 @@ Below is an overview of the world map where:
 In this state (as we are in the `On` state) all coastal tiles match. Note that this is the same behavior for the `Partial` state (which would mean: I don't care if it's coastal or not).
 
 Now here is an overview of the world map where:
-
 - The Boreal Forest biome is filtered (all Boreal Forest biome tiles are highlighted)
 - The coastal tile state is `Off`: **coastal tiles must not be included**
 
@@ -72,9 +65,8 @@ We start with a default filter for road types:
 ![road filter](assets/select_road.png)
 
 Below is an overview of the world map where:
-
 - The Boreal Temperate Forest biome is filtered (all Temperate Forest biome tiles are highlighted)
-- The road filter is its default state (all road filters are in their Partial State which means: **Tiles may or may not have a road.** (this implies that all tiles match).
+- The road filter is its default state (all road filters are in their Partial State which means: **Tiles may or may not have a road** (this implies that all tiles match.)
 
 ![road filter: default state](assets/exemple_three_state2_1.png)
 
@@ -83,7 +75,6 @@ Now with the following road filter applied:
 ![road filter: new filter](assets/exemple_three_state2_3.png)
 
 The above filter means:
-
 - Tiles must have a `Stone Road`
 - Tiles may or may not have a `Dirt Path`
 - I do not want tiles with a `Dirt Road`, `Ancient Asphalt Road`, `Ancient Asphalt`
@@ -109,24 +100,22 @@ The orderable three state filter works like the [three state filter](#three-stat
 
 Here is a live example:
 
-![reorderable three state filter](assets/stone_reordering_optimized.gif)
+![re-orderable three state filter](assets/stone_reordering_optimized.gif)
 
 Note that the reordering is only meaningful for the `On` and `Partial` states (the `Off` state, by definition, has no precise order).
 
 The above example means:
-
 - Filter tiles that have `Sandstone` in first position
 - Filter tiles that have `Limestone` in second position
 - Filter tiles that may or may not have `Slate` in third position
-- Do not include tiles that have `Granite`
-- Do not include tiles that have `Marble`
+- Do not include tiles that have `granite`
+- Do not include tiles that have `marble`
 
-As of now, only the `Stone type` filter is reorderable.
+As of now, only the `Stone type` filter is re-orderable.
 
 ## Usable Numeric
 
 A `usable numeric` filter is comprised of three items:
-
 - A on / off button for the filter usage
     - if `on` the filter is taken into account
     - if `off` the filter is not included
@@ -142,4 +131,5 @@ Do not forget to click on the `Use` button if you want to use the filter!
 
 # Live Filtering
 
-Instead of having to click on the `Filter` button, you also have the possibility to use `Live Filtering` by chossing this option in the `Options` tab of the main window. Be wary that this option may result in CPU heavy combination of filters in some cases, which might result in the game freezing for some time.
+Instead of having to click on the `Filter` button, you also have the possibility to use `Live Filtering` by choosing this option in the `Options` tab of the main window.
+Be wary that this option may result in CPU heavy combination of filters in some cases, which might result in the game freezing for some time.

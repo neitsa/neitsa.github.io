@@ -1,6 +1,5 @@
-Terrain Tab
+﻿Terrain Tab
 ===========
-
 The terrain tab deals with terrain-related filters.
 
 ![Terrain tab](assets/terrain_tab.png)
@@ -16,6 +15,7 @@ The list of available filters in this tab is:
     - Summer Movement Time
     - Winter Movement Time
 - [Stone Type](#stone-type)
+ - [Number of Stones](#number-of-stones)
 - [Coastal Tiles](#coastal-tiles)
 - [Elevation](#elevation)
 - [Time Zone](#time-zone)
@@ -30,7 +30,6 @@ Choose one of the available biomes, even custom ones from other mods, by clickin
 Once a biome is chosen, only tiles from that biome will be selected.
 
 The vanilla game offers height biomes where you can settle (please note that biomes that don't allow bases can't be filtered):
-
 - Arid Shrubland
 - Boreal Forest
 - Desert
@@ -41,7 +40,7 @@ The vanilla game offers height biomes where you can settle (please note that bio
 - Tropical Rainforest
 - Tundra
 
-Please note that the `Any` biome simply means “All available biomes.”
+Please note that the `Any` biome simply means "All available biomes."
 
 This is the default filter state, which also means that no specific biome filtering is applied in this state (or put in a different way: all biome tiles match)
 
@@ -55,7 +54,6 @@ Choose one of the available terrain types (even custom ones from other mods), by
 Once a terrain is chosen, only tiles with that terrain will be selected.
 
 The vanilla game offers five terrain types:
-
 - Flat
 - Small hills
 - Large hills
@@ -63,8 +61,7 @@ The vanilla game offers five terrain types:
 - Impassable
 
 Notice that the impassable terrain can't be chosen in `PrepareLanding` as it is not possible to settle your colony in such a terrain.
-
-However the `[TODO]` “Allow impassable tiles” in the Options tab allow you to choose and filter tiles with an impassable terrain.
+However the `[TODO]` "Allow impassable tiles" in the Options tab allow you to choose and filter tiles with an impassable terrain.
 
 Road Type
 ---------
@@ -74,7 +71,6 @@ Choose a combination of the available road types by clicking one or more of the 
 ![road selection](assets/select_road.png)
 
 The vanilla game offers five road types (from the smallest to the biggest):
-
 - Dirt path
 - Dirt Road
 - Stone Road
@@ -93,9 +89,8 @@ Choose a combination of the available river types by clicking one or more of the
 ![river selection](assets/select_river.png)
 
 The vanilla game offers four river types (from the biggest to smallest):
-
-- Huge river
-- Large river
+- Huge River
+- Large River
 - River
 - Creek
 
@@ -126,7 +121,6 @@ Choose a combination of the available stones types by clicking one or more of th
 ![stone selection](assets/select_stone.png)
 
 The vanilla game offers five stone types:
-
 - Granite
 - Limestone
 - Marble
@@ -144,6 +138,16 @@ Here, the above order means that there will be more `Sandstone` than `Limestone`
 See the [orderable three states filtering](filtering.md#orderable-three-states) on how to proceed with this type of filter.
 
 The `Reset All` button reset all the stone filters to their default state (Partial state).
+
+### Number Of Stones
+
+You can also use the `number of stones` filter which basically allows you to filter tiles with either 2 or 3 types of stones in it, whatever these stone types are.
+
+![number of stones filter](assets/num_of_stones.png)
+
+Notice than when this filter is in use, you can't use the other stone types filter:
+
+![number of stones filter](assets/num_of_stones2.png)
 
 Coastal Tiles
 -------------
