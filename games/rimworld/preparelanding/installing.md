@@ -46,4 +46,4 @@ Remember to put the `HugsLib` mod before `PrepareLanding` once you have clicked 
 
 The `PrepareLanding` mod is also available on [Steam](http://steamcommunity.com/sharedfiles/filedetails/?id=1095331978). You just have to click on the subscribe button. If you wish to do so, you can also leave a comment and / or a rating.
 
-As in the [From Github](#from-github) explanation above, remember to put `HugsLib` **before// the `PrepareLanding` mod.
+As in the [From Github](#from-github) explanation above, remember to put `HugsLib` **before** the `PrepareLanding` mod.

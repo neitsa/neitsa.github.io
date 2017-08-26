@@ -28,6 +28,6 @@ Manual
     * Filtered Tiles Tab
     * World Info Tab
     * Options Tab
- * God Mode Tab
+    * God Mode Tab
     * [Minimized Window](starting.md#minimized-window)
 * [Filtering](filtering.md)

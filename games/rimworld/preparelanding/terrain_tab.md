@@ -61,7 +61,7 @@ The vanilla game offers five terrain types:
 - Impassable
 
 Notice that the impassable terrain can't be chosen in `PrepareLanding` as it is not possible to settle your colony in such a terrain.
-However the `[TODO]` "Allow impassable tiles" in the Options tab allow you to choose and filter tiles with an impassable terrain.
+However the "Allow impassable tiles" in the Options tab allow you to choose and filter tiles with an impassable terrain.
 
 Road Type
 ---------
@@ -79,7 +79,7 @@ The vanilla game offers five road types (from the smallest to the biggest):
 
 See [three states filtering](filtering.md#three-states) on how to proceed with this type of filter.
 
-The `Reset All` button reset all the road filters to their default state (Partial state).
+The `Reset` button reset all the road filters to their default state (Partial state). The `All` button select all roads (On state) while the `None` button de-select all of them (Off state).
 
 River Type
 ----------
@@ -96,7 +96,7 @@ The vanilla game offers four river types (from the biggest to smallest):
 
 See [three states filtering](filtering.md#three-states) on how to proceed with this type of filter.
 
-The `Reset All` button reset all the river filters to their default state (Partial state).
+The `Reset All` button reset all the river filters to their default state (Partial state). The `All` button select all rivers (On state) while the `None` button de-select all of them (Off state).
 
 Movement Times
 --------------

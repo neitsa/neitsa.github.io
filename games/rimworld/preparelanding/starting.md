@@ -36,9 +36,9 @@ Available filters are:
     - Animals Can Graze Now
 	
 * Most / Least Features
- - Elevation
- - Temperature
- - Rainfall
+	- Elevation
+	- Temperature
+	- Rainfall
  
 It also offers the possibility of changing various features of an existing tiles (in `God mode`).
 
@@ -70,7 +70,7 @@ As you can see in the above screenshot, once `PrepareLanding` is installed, a ne
 
 ![bottom buttons](assets/bottom_buttons.png)
 
-Clicking on this button display a new window with five tabs:
+Clicking on this button display a new window with five tabs (note that the `God Mode` tab is hidden by default):
 
 ![terrain tab](assets/terrain_tab.png)
 
@@ -79,6 +79,7 @@ Clicking on this button display a new window with five tabs:
 * [Filtered Tiles](filtered_tab_tiles.md)
 * [World Info](world_info_tab.md)
 * [Options](options_tab.md)
+* [God Mode(god_mode.md)
 
 The above links discuss in detail each of the tabs and their content.
 
@@ -89,6 +90,7 @@ The main window itself (besides the tabs) has 4 buttons at the bottom:
 * `Reset Filters`: reset all filters to their default state
 * `Minimize`: [minimize](#minimized-window) the main window. Helpful once you have applied some filters and the main window is in your way.
 * `Close`: Close the main window. You can still make it reappear by clicking the `PrepareLanding` button at the bottom.
+* `Load / Save`: Load or save filters and / or options.
 
 Minimized Window
 ----------------
