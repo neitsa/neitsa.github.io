@@ -27,12 +27,14 @@ Three state items have, as their name implies, three possible states:
 - Partial: ![ON state](assets/partial_state.png)
 
 The `On` state means:
-    - I absolutely **want** this option when filtering tiles
+- I absolutely **want** this option when filtering tiles
+  
 The `Off` state means:
-    - I absolutely **do not want** this option when filtering tiles
+- I absolutely **do not want** this option when filtering tiles
+  
 The `Partial` state means:
-    - I **do not care** if this option is available or not when filtering tiles.
-	
+- I **do not care** if this option is available or not when filtering tiles.
+  
 Note that when clicking on a state item, the order of appearance is: `Partial` -> `Off` -> `On` -> `Partial` -> etc.
 
 ### Three states: simple example
