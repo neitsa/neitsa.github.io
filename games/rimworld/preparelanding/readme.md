@@ -25,7 +25,7 @@ Manual
 * [The Main Window](starting.md#main-window)
     * [Terrain Tab](terrain_tab.md)
     * [Temperature Tab](temperature.md)
-    * Filtered Tiles Tab
+    * [Filtered Tiles Tab](filtered_tiles.md)
     * World Info Tab
     * Options Tab
     * God Mode Tab
