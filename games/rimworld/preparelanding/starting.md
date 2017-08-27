@@ -40,7 +40,7 @@ Available filters are:
 	- Temperature
 	- Rainfall
  
-It also offers the possibility of changing various features of an existing tiles (in `God mode`).
+It also offers the possibility of changing various features of an existing tiles (in `God mode` as explained in [God Mode Tab](god_mode_tab.md)).
 
 `PrepareLanding` is available during two moments in RimWorld:
 * Before you have started your colony, during the `Select landing site` page.
@@ -76,10 +76,10 @@ Clicking on this button display a new window with five tabs (note that the `God 
 
 * [Terrain](terrain_tab.md)
 * [Temperature](temperature_tab.md)
-* [Filtered Tiles](filtered_tab_tiles.md) (`TODO`)
-* [World Info](world_info_tab.md) (`TODO`)
-* [Options](options_tab.md) (`TODO`)
-* [God Mode](god_mode.md) (`TODO`)
+* [Filtered Tiles](filtered_tiles_tab.md)
+* [World Info](world_info_tab.md)
+* [Options](options_tab.md)
+* [God Mode](god_mode_tab.md)
 
 The above links discuss in detail each of the tabs and their content.
 

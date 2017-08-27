@@ -24,10 +24,10 @@ Manual
 * [Starting](starting.md)
 * [The Main Window](starting.md#main-window)
     * [Terrain Tab](terrain_tab.md)
-    * [Temperature Tab](temperature.md)
-    * [Filtered Tiles Tab](filtered_tiles.md)
-    * World Info Tab
-    * Options Tab
-    * God Mode Tab
+    * [Temperature Tab](temperature_tab.md)
+    * [Filtered Tiles Tab](filtered_tiles_tab.md)
+    * [World Info Tab](world_info_tab.md)
+    * [Options Tab](options_tab.md)
+    * [God Mode Tab](god_mode_tab.md)
     * [Minimized Window](starting.md#minimized-window)
 * [Filtering](filtering.md)
