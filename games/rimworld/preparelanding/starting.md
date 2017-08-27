@@ -76,10 +76,10 @@ Clicking on this button display a new window with five tabs (note that the `God 
 
 * [Terrain](terrain_tab.md)
 * [Temperature](temperature_tab.md)
-* [Filtered Tiles](filtered_tab_tiles.md)
-* [World Info](world_info_tab.md)
-* [Options](options_tab.md)
-* [God Mode(god_mode.md)
+* [Filtered Tiles](filtered_tab_tiles.md) (`TODO`)
+* [World Info](world_info_tab.md) (`TODO`)
+* [Options](options_tab.md) (`TODO`)
+* [God Mode](god_mode.md) (`TODO`)
 
 The above links discuss in detail each of the tabs and their content.
 
