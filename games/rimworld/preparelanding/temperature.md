@@ -3,20 +3,20 @@ Temperature
 
 The temperature tab deals mostly with temperature-related filters.
 
+![Temperature Tab](assets/temperature_tab.png)
+
 The list of available filters in this tab is as follows:
 * [Temperatures](#temperatures)
     * Average Temperature
     * Winter Temperature
     * Summer Temperature
 * [Growing Period](#growing-period)
-* Rainfall
-* Animals Can graze Now
-* Most / Least Feature
+* [Rainfall](#rainfall)
+* [Animals Can graze Now](#animals-can-graze-now)
+* [Most / Least Feature](#most-least-feature)
     * Elevation
     * Temperature
     * Rainfall
-	
-![Temperature Tab](assets/temperature_tab.png)
 
 # Temperatures
 
@@ -47,7 +47,7 @@ Obviously, the minimum growing period cannot be greater than the maximum.
 
 Note that:
 
-1. The game as a 60 days-long year, so the minimum is `Never` (0 day; no growing period) and the maximum is `Year-round` (60 days).
+1. The game has a 60 days-long year, so the minimum is `Never` (0 day; no growing period) and the maximum is `Year-round` (60 days).
 2. Growing periods are organized in period of 5 days; 5 days = a single Twelfth (as there are 12 twelves in a year, which amounts to a total of 60 days).
 
 # Animals Can Graze Now
@@ -78,7 +78,7 @@ The currently selectable features are:
 * Rainfall
 * Temperature
 
-Simply put it allows you to select a given number of tiles with the lowest or highest feature. For example, you might want to choose the 25 tiles with the highest elevation, or filtering the 100 tiles with the lowest temperature.
+Simply put it allows you to select a given number of tiles with the lowest or highest feature. For example, you might want to choose the 25 tiles with the highest elevation, or filtering the 100 tiles that have the lowest temperature.
 
 Of course you can combine this filter with other filters.
 
