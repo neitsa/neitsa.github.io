@@ -9,7 +9,7 @@ Choosing a landing site can be done by applying and using different set of filte
 
 ![tiles blinking](assets/tiles_blink.gif)
 
-It is also possible to change the current characteristics of a tile for the following features:
+It is also possible to **change** the current characteristics of a tile for the following features (see [God Mode Tab](god_mode_tab.md)):
 * Biome
 * Temperature
 * Terrain
