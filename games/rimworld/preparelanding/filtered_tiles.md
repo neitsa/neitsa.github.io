@@ -35,6 +35,8 @@ Each entry in the filtered tile list is composed as follows:
 
 - index: Latitude Longitude - Biome; tile ID
 
+Note that clicking on an entry list will brought you on the right tile on the world map.
+
 # Right Part
 
-Clicking on an entry in the list of filtered tiles in the right part of the window displays information about the selected tile.
+Clicking on an entry in the list of filtered tiles in the right part of the tab also displays information about the selected tile.
