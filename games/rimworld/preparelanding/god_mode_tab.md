@@ -3,7 +3,7 @@ God Mode Tab
 
 The god mode tab allows you to **change** various features of a tile.
 
-![God Mode Tab](assets/god_mod_tab.png)
+![God Mode Tab](assets/god_mode_tab.png)
 
 # Activating the Tab
 
