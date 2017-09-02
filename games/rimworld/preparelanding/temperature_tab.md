@@ -12,11 +12,13 @@ The list of available filters in this tab is as follows:
     * Summer Temperature
 * [Growing Period](#growing-period)
 * [Rainfall](#rainfall)
-* [Animals Can graze Now](#animals-can-graze-now)
 * [Most / Least Feature](#most-least-feature)
     * Elevation
     * Temperature
     * Rainfall
+* [Animals Can graze Now](#animals-can-graze-now)
+
+The "[Temperature Forecast](#temperature-forecast)" is **not** a filter: it allows you to see the temperature forecasts for a given date at a given tile.
 
 # Temperatures
 
@@ -84,3 +86,34 @@ Of course you can combine this filter with other filters.
 
 First you need to select the given feature (elevation, temperature or rainfall) and next the type of the feature (most / least or if you wish highest / lowest).
 To disable the filter, simply choose "None" as the feature to filter. This disable the filter altogether.
+
+# Temperature Forecast
+
+The temperature forecast allows you to see the temperature forecast for a given tile.
+
+To use this feature:
+
+1. Select a tile on the world map
+2. Select a date on the date selector
+3. Push the "View Temperature Forecast" button
+
+The date selector allows you to choose the date for which the forecast should be done, it has three main components:
+
+* Day of the Quadrum [1, 15]
+* Quadrum [Aprimay, Jugust, Setptober, Decembary]
+* Year [5500, 5550]
+
+![Temperature Forecast Selection](assets/temperature_forecast_selection.png)
+
+Once you have pushed the "View Temperature Forecast", the following window appears:
+
+![Temperature Forecast Window](assets/temperature_forecast_window.png)
+
+* The lefmost table indicates the average outdoor temperatures for each hour of the selected day.
+* The middle table indicates the average outdoor temperature for each twelves of the selected year.
+* The rightmost table gives the minimum & maximum temperatures for the next year, sarting at the selected date (note: a year in RimWorld is 60 days; day 0 being the currently selected day).
+
+The "Tile Specs" gives you various information about the selected day, the selected tile and temperatures.
+
+
+

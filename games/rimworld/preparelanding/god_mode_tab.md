@@ -39,4 +39,4 @@ As of now, the following features of a tile can be changed:
 
 To change feature simply choose the ones you want to change and finally click on the "Set Tile" Button. If you changed the biome or the elevation, you might want to click the `Redraw Map` button to reflect your change on the world map.
 
-The left part of the window gives you a very detailed information about the temperatures for the chosen tile during the next year (60 days).
+On the left part of the window you can find a button that is equivalent to the [Temperature Forecast](temperature_tab.md#temperature-forecast) of the [Temperature Tab](temperature_tab.md).
