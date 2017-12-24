@@ -17,7 +17,9 @@ For an example of the three states filters see the [examples](#three-states-filt
 - [Three States: advanced example 2](#three-states-advanced-example-2): `AND` filtering.
 - [Three States: advanced example 3](#three-states-advanced-example-3): `AND` filtering + `Partial`.
 
-# Single Choice
+
+Single Choice
+-------------
 
 The single choice selection is the simplest one: you only have a single choice to select your filter.
 
@@ -92,7 +94,8 @@ As this might be counterintuitive a special condition has been implemented so us
 If all items are in a `Off` then they still select tiles (in the previous example, this would still select tiles without any road).
 
 
-## Orderable Three States
+Orderable Three States
+----------------------
 
 The orderable three state filter works like the [three state filter](#three-states) except the order itself can be changed.
 
@@ -111,7 +114,9 @@ The above example means:
 
 As of now, only the `Stone type` filter is re-orderable. Please note that for the stone filter, the ordered filtering can be disabled. 
 
-## Usable Numeric
+
+Usable Numeric
+--------------
 
 A `usable numeric` filter is comprised of three items:
 - A on / off button for the filter usage
@@ -127,12 +132,16 @@ Do not forget to click on the `Use` button if you want to use the filter!
 
 ![usable numeric filter: use](assets/usable_numeric.gif)
 
-# Live Filtering
+
+Live Filtering
+--------------
 
 Instead of having to click on the `Filter` button, you also have the possibility to use `Live Filtering` by choosing this option in the `Options` tab of the main window.
 Be wary that this option may result in CPU heavy combination of filters in some cases, which might result in the game freezing for some time.
 
-# Three States Filtering Examples
+
+Three States Filtering Examples
+-------------------------------
 
 ## Three states: simple example
 
