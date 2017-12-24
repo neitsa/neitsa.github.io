@@ -1,7 +1,5 @@
-﻿Filtering
+Filtering
 =========
-
-*** Warning: This page is in construction ***
 
 Filtering is done by selecting the filters available in the [terrain](terrain.md) and [temperature](temperature.md) tab.
 
@@ -12,6 +10,11 @@ There are four categories of filters in `PrepareLanding`:
 - [Three state](#three-states) filters
 - [Orderable three state](#orderable-three-state) filters
 - [Usable numeric](#usable-numeric) filters
+
+For an example of the Boolean three states filters see the [examples](#three-states-filtering-examples):
+- [Three States: advanced example 1](three-states-advanced-example-1): `OR` filtering.
+- [Three States: advanced example 2](three-states-advanced-example-2): `AND` filtering.
+- [Three States: advanced example 3](three-states-advanced-example-3): `AND` filtering + `Partial`.
 
 # Single Choice
 
@@ -50,6 +53,8 @@ As of now, only `Roads` and `Rivers` filters support this option.
 - `Partial` state (depends on the type of filter)
     - `OR`: logically same as `On`
     - `AND`: add a supplementary Boolean `OR` check.
+    
+For examples about the Boolean logic used in these filters please see the [examples](#three-states-filtering-examples).
 
 ## Understanding Three States Boolean Filtering
 
@@ -60,7 +65,7 @@ There are two possible Boolean filters:
 
 ### OR Filtering
 
-The `OR` filtering applies a Boolean `OR` operator for each items in the list, where each item describes what should or shouldn't be in the tile.
+The `OR` filtering applies a Boolean `OR` operator for each item in the list, where each item describes what should or shouldn't be in the tile.
 
 Think of it as each item being evaluated separately. If any (one or more) of the checks results in a boolean `True` condition, then the tile is included.
 
@@ -78,14 +83,13 @@ Think of it as if all items were evaluated together. If any (one or more) of the
 
 The side effect of a strict boolean filtering is that `False` conditions **never** select anything as the result is discarded.
 
-So if you have to remember one one crucial thing when using these filters: `Off` never selects anything!
+So if you have to remember one crucial thing when using these filters: `Off` never selects anything!
 
 As an example of this side effect, if you sets all of the roads to `Off` (meaning you don't want any road in the tile) this won't select tiles without any roads...
 
-As this might be counter-intuitive a special condition has been implemented so users don't feel the filters are not working correctly: 
+As this might be counterintuitive a special condition has been implemented so users don't feel the filters are not working correctly: 
 If all items are in a `Off` then they still select tiles (in the previous example, this would still select tiles without any road).
 
-TODO: explain OffPartialNoSelect button
 
 ## Orderable Three States
 
@@ -104,7 +108,7 @@ The above example means:
 - Do not include tiles that have `granite`
 - Do not include tiles that have `marble`
 
-As of now, only the `Stone type` filter is re-orderable.
+As of now, only the `Stone type` filter is re-orderable. Please note that for the stone filter, the ordered filtering can be disabled. 
 
 ## Usable Numeric
 
@@ -131,7 +135,7 @@ Be wary that this option may result in CPU heavy combination of filters in some 
 
 ## Three states: simple example
 
-Lets take an example with the [Coastal Tile](terrain_tab.md#coastal-tiles) filter on the [Terrain Tab](terrain.md). (`World Map (RimWorld Version: B18); Seed: flo; World coverage: 5%`)
+Let's take an example with the [Coastal Tile](terrain_tab.md#coastal-tiles) filter on the [Terrain Tab](terrain.md). (`World Map (RimWorld Version: B18); Seed: flo; World coverage: 5%`)
 
 1. Set a [biome filter](terrain_tab.md#biome-type) for `Boreal Forest`.
 2. Let the [coastal filter](terrain_tab.md#coastal-tiles) in its default `Partial` state ![Partial state](assets/partial_state.png).
@@ -170,43 +174,79 @@ Notice how only tiles that are coastal tiles are highlighted!
 ![Costal Tiles: On state](assets/exemple_three_state1_3.png)
 
 
-
-## Three States: advanced example
+## Three States: advanced example 1
 
 Roads and Rivers are a combination of multiple three states items (`On`, `Off` and `Partial`) and Boolean filtering.
 
 Here is an example of the [Road Types](terrain.md#road-types) filter on the [Terrain Tab](terrain.md). (`World Map (Rimworld Version: B18); Seed: goldfish; World coverage: 100%`)
 
-We start with a default filter for road types (all items to `Partial` state and `OR` Boolean filtering):
+The following base filters are applied:
 
-![road filter](assets/select_road.png)
+- Biome: Desert
+- World Feature (named location): Gatasnaro Plateau
 
-Below is an overview of the world map where:
-- The Boreal Temperate Forest biome is filtered (all Temperate Forest biome tiles are highlighted)
-- The road filter is its default state (all road filters are in their Partial State which means: **Tiles may or may not have a road** (this implies that all tiles match.)
+We start our example around tile ID 511159 (5.77°N 172.20°W).
 
-![road filter: default state](assets/exemple_three_state2_1.png)
+![road filter example: location](assets/exemple_three_state2_1.png)
 
-Now with the following road filter applied:
+The following road filters are applied:
 
-![road filter: new filter](assets/exemple_three_state2_3.png)
+- Dirth Path: `On`
+- Ancien Asphalt Highway: `On`
+- All other roads set to `Off`
+- Boolean filter set to `OR`
 
-The above filter means:
-- Tiles must have a `Stone Road`
-- Tiles may or may not have a `Dirt Path`
-- I do not want tiles with a `Dirt Road`, `Ancient Asphalt Road`, `Ancient Asphalt`
+![road filter: example 1 state 1](assets/exemple_three_state2_2.png)
 
-Notice the higher priority of the `Stone Road` filter: this immediately makes all tiles with a Stone Road a must have, deselecting all tiles **without** a `Stone Road`.
+Here are the resulting filtered tiles:
 
-![road filter: new filter result](assets/exemple_three_state2_2.png)
+![road filter: example 1 resulting tiles](assets/exemple_three_state2_3.png)
 
-On the other hand, with the following filter:
+Now, remember that in Boolean `OR` filtering, each of the items (road types in our case) is applied separately. Thus, the above road filtering means:
+- Tile must have a `Ancien Asphalt Highway`
+- Tile must have a `Dirt Path`
+- I do not want tiles with other types of roads.
 
-![road filter: new filter](assets/exemple_three_state2_4.png)
+In our case this match tiles that have `Ancien Asphalt Highway` or `Dirt Path` or both of them!
 
-- Tiles may or may not have a `Dirt Path`
-- I do not want tiles with a `Dirt Road`, `Stone Road`, `Ancient Asphalt Road`, `Ancient Asphalt`
+Let's proceed with the boolean `AND` filter, with the exact same conditions:
 
-Notice how all tiles with or without a `Dirt Path` are selected, but the tiles with the other road types are deselected:
+![road filter: example 1 state 2](assets/exemple_three_state2_4.png)
 
-![road filter: new filter result](assets/exemple_three_state2_5.png)
+And here is the result:
+
+![road filter: example 1 resulting tiles](assets/exemple_three_state2_5.png)
+
+As you can see this time, it only matches tiles that have both `Ancien Asphalt Highway` and `Dirt Path` **at the same time**, and not the other tiles!
+
+## Three States: advanced example 2
+
+This example demonstrates the Boolean ternary logic applied in the case of the Boolean `AND` filtering when a `Partial` item is included (remember that the `Partial` state has no special meaning in the case of the `OR` filtering).
+
+Given the same location and base filtering as the previous example, let's try first a simple filter:
+
+![road filter: example 2 state 1](assets/exemple_three_state3_1.png)
+
+In this case this means we only want tiles with `Ancien Asphalt Highway` roads (the fact that it is `AND` or `OR` doesn't matter here as they would give the same result).
+
+![road filter: example 2 resulting tiles](assets/exemple_three_state3_2.png)
+
+Now let's add a `Partial` item for `Stone road` with the Boolean `AND` filter selected:
+
+![road filter: example 2 new filter](assets/exemple_three_state3_3.png)
+
+And here's the result:
+
+![road filter: example 2 resulting tiles](assets/exemple_three_state3_4.png)
+
+In this case this means:
+
+- I want roads that have `Ancien Asphalt Highway` (`On` state)
+- The matched tiles **may** (due to the `Partial` State) also have a `Stone Road`
+
+In case you aren't sure, here is how would looks the result if we toggled the Boolean filter to `OR` instead of `AND`:
+
+![road filter: example 2 resulting tiles](assets/exemple_three_state3_4.png)
+
+ 
+As you can see, it independently selects roads that have `Ancien Asphalt Highway` or `Stone Road` or both of them.
