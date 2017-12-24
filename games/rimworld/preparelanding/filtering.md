@@ -11,7 +11,7 @@ There are four categories of filters in `PrepareLanding`:
 - [Orderable three state](#orderable-three-state) filters
 - [Usable numeric](#usable-numeric) filters
 
-## Single Choice
+# Single Choice
 
 The single choice selection is the simplest one: you only have a single choice to select your filter.
 
@@ -19,12 +19,12 @@ For example, the biome selection is one of them as you can only choose one biome
 
 ![biome selection](assets/biomes.png)
 
-## Three States
+# Three States
 
 Three state items have, as their name implies, three possible states:
 - On: ![ON state](assets/on_state.png)
-- Off: ![ON state](assets/off_state.png)
-- Partial: ![ON state](assets/partial_state.png)
+- Off: ![OFF state](assets/off_state.png)
+- Partial: ![Partial state](assets/partial_state.png)
 
 The `On` state means:
 - I absolutely **want** this option when filtering tiles
@@ -37,29 +37,50 @@ The `Partial` state means:
   
 Note that when clicking on a state item, the order of appearance is: `Partial` -> `Off` -> `On` -> `Partial` -> etc.
 
-### Three states: simple example
+## Three states: simple example
 
-Let's take an example with the [Coastal Tile](terrain.md#coastal-tiles) filter on the [Terrain Tab](terrain.md). (`World Map -> Version: A17b; Seed: flo; World coverage: 5%`)
+Lets take an example with the [Coastal Tile](terrain_tab.md#coastal-tiles) filter on the [Terrain Tab](terrain.md). (`World Map (RimWorld Version: B18); Seed: flo; World coverage: 5%`)
+
+1. Set a [biome filter](terrain_tab.md#biome-type) for `Boreal Forest`.
+2. Let the [coastal filter](terrain_tab.md#coastal-tiles) in its default `Partial` state ![Partial state](assets/partial_state.png).
 
 ![coastal filter](assets/select_coastal.png)
 
-Below is an overview of the world map where:
-- the Boreal Forest biome is filtered (all Boreal Forest biome tiles are highlighted)
-- The coastal tile state is `On`, which means: **coastal tiles must be included**
+Now press the `Filter` button at the bottom of the `PrepareLanding` window.
 
-![Costal Tiles: On state](assets/exemple_three_state1_1.png)
+### Partial State
 
-In this state (as we are in the `On` state) all coastal tiles match. Note that this is the same behavior for the `Partial` state (which would mean: I don't care if it's coastal or not).
+Below is a picture of the highlighted tiles:
 
-Now here is an overview of the world map where:
-- The Boreal Forest biome is filtered (all Boreal Forest biome tiles are highlighted)
-- The coastal tile state is `Off`: **coastal tiles must not be included**
+![Costal Tiles: partial state](assets/exemple_three_state1_1.png)
 
-![Costal Tiles: Off state](assets/exemple_three_state1_2.png)
+As you can see all tiles of the boreal forest biome are highlighted, as the coastal filter is in the `Partial` state. In this state it means: we don't care if tiles are coastal or not.
+
+Put in another way, when a filter is in partial state, it simply means that it both match `On` and `Off`.
+
+### Off State
+
+Now go to the coastal filter and make sure it is in the `Off` state (red checkmark: ![OFF state](assets/off_state.png)). In this state it means: **coastal tiles must not be included**.
 
 Notice how in this state, coastal tiles were removed from the filtering.
 
-### Three States: advanced example
+![Costal Tiles: Off state](assets/exemple_three_state1_2.png)
+
+
+### On State
+
+Now go to the coastal filter and make sure it is in the `On` state (green checkmark: ![ON state](assets/on_state.png)) where it means: **coastal tiles must be included**.
+
+The coastal tile state is `On`, which means: 
+In this state (as we are in the `On` state) all coastal tiles match. Note that this is the same behavior for the `Partial` state (which would mean: I don't care if it's coastal or not).
+
+Notice how only tiles that are coastal tiles are highlighted!
+
+![Costal Tiles: On state](assets/exemple_three_state1_3.png)
+
+
+
+## Three States: advanced example
 
 Here is an example of the [Road Types](terrain.md#road-types) filter on the [Terrain Tab](terrain.md). (`World Map -> Version: A17b; Seed: poker; World coverage: 5%`)
 
