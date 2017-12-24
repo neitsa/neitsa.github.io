@@ -11,10 +11,11 @@ There are four categories of filters in `PrepareLanding`:
 - [Orderable three state](#orderable-three-state) filters
 - [Usable numeric](#usable-numeric) filters
 
-For an example of the Boolean three states filters see the [examples](#three-states-filtering-examples):
-- [Three States: advanced example 1](three-states-advanced-example-1): `OR` filtering.
-- [Three States: advanced example 2](three-states-advanced-example-2): `AND` filtering.
-- [Three States: advanced example 3](three-states-advanced-example-3): `AND` filtering + `Partial`.
+For an example of the three states filters see the [examples](#three-states-filtering-examples):
+- [Three States: Simple example](#three-states-advanced-example): A single three state item example.
+- [Three States: advanced example 1](#three-states-advanced-example-1): `OR` filtering.
+- [Three States: advanced example 2](#three-states-advanced-example-2): `AND` filtering.
+- [Three States: advanced example 3](#three-states-advanced-example-3): `AND` filtering + `Partial`.
 
 # Single Choice
 
@@ -246,7 +247,7 @@ In this case this means:
 
 In case you aren't sure, here is how would looks the result if we toggled the Boolean filter to `OR` instead of `AND`:
 
-![road filter: example 2 resulting tiles](assets/exemple_three_state3_4.png)
+![road filter: example 2 resulting tiles](assets/exemple_three_state3_5.png)
 
  
 As you can see, it independently selects roads that have `Ancien Asphalt Highway` or `Stone Road` or both of them.
