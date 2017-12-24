@@ -27,7 +27,7 @@ The list of available filters in this tab is:
 Biome Type
 ----------
 
-Choose one of the available biomes, even custom ones from other mods, by clicking the `Select Biome Type` button.
+Choose one of the available biomes (even custom ones from other mods) by clicking the `Select Biome Type` button.
 
 ![biome selection](assets/biomes.png)
 
@@ -50,7 +50,7 @@ The vanilla game (as of B18) offers twelves biomes where you can settle (please 
 Please note that the `Any` biome simply means "All available biomes". 
 The `Any` biome is the default filter state, which also means that no specific biome filtering is applied in this state (or put in a different way: all biome tiles match).
 
-Custom biomes from mods are inherently supported.
+Custom biomes from other mods are inherently supported.
 
 Terrain Type
 ------------
@@ -71,6 +71,8 @@ The vanilla game offers five terrain types:
 Notice that the impassable terrain can't be chosen in `PrepareLanding` as it is not possible to settle your colony in such a terrain.
 However the "`Allow impassable tiles`" in the Options tab allow you to choose and filter tiles with an impassable terrain.
 
+Custom terrains from other mods are inherently supported.
+
 Road Type
 ---------
 
@@ -89,6 +91,8 @@ See [three states filtering](filtering.md#three-states) on how to proceed with t
 
 The `Reset` button reset all the road filters to their default state (`Partial` state). The `All` button selects all roads (`On` state) while the `None` button deselects all of them (`Off` state).
 
+Custom roads from other mods are inherently supported.
+
 River Type
 ----------
 
@@ -105,6 +109,8 @@ The vanilla game offers four river types (from the biggest to smallest):
 See [three states filtering](filtering.md#three-states) on how to proceed with this type of filter.
 
 The `Reset` button reset all the river filters to their default state (`Partial` state). The `All` button selects all roads (`On` state) while the `None` button deselects all of them (`Off` state).
+
+Custom roads from other mods are inherently supported.
 
 Movement Times
 --------------
@@ -156,7 +162,7 @@ There are two kinds of coasts adjacent to a water body that can be filtered in `
 - Sea coasts: coasts touching a sea or ocean.
 - Lake: coast touching a lake, where a lake is **at most** 15 tiles of water surrounded by land.
 
-It is also possible to filter tiles with a sea coast depending on which direction the coast if facing: North, East, West, South.
+It is also possible to filter tiles with a sea coast depending on which direction the coast is facing: North, East, West, South.
 
 ![Coastal filter: coast rotation](assets/select_coastal_rotation.png)
 
@@ -181,13 +187,19 @@ You can see the stone order by clicking a tile on the world map and looking at t
 
 ![movement time selection](assets/stone_order_terrain_tab.png)
 
-Note that by default, the filtering is ordered. In the above example the order is: `Sandstone` then `Limestone` then `Slate`.
+Note that by default, the filtering is ordered. In the above example the precise order is: `Sandstone` then `Limestone` then `Slate`.
 
-You can change the order of the stone in the filter: see the [orderable three states filtering](filtering.md#orderable-three-states) on how to proceed with this type of filter.
+You can change the order of the stones in the filter: see the [orderable three states filtering](filtering.md#orderable-three-states) on how to proceed with this type of filter.
 
-If you specifically do **not** want a specific order, click on the `Filter: Ordered` button (which will turn red): this instructs `PrepareLanding` to filter stones in without any precise order.
+If you specifically do **not** want a specific order, click on the `Filter: Ordered` button (which will turn red): this instructs `PrepareLanding` to filter stones without any precise order.
 
-The `Reset All` button reset all the stone filters to their default state (Partial state).
+![stone selection: ordered](assets/select_stone_order.png)
+
+![stone selection: no order](assets/select_stone_order2.png)
+
+The `Reset All` button reset all the stone filters to their default state (`Partial` state).
+
+Custom stone types from other mods are inherently supported.
 
 
 ### Number of Stones
