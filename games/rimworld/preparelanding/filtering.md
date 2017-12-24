@@ -8,11 +8,11 @@ Once you have selected one or more filter, you can click the `Filter` button at 
 There are four categories of filters in `PrepareLanding`:
 - [Single choice](#single-choice) filters
 - [Three state](#three-states) filters
-- [Orderable three state](#orderable-three-state) filters
+- [Orderable three state](#orderable-three-states) filters
 - [Usable numeric](#usable-numeric) filters
 
 For an example of the three states filters see the [examples](#three-states-filtering-examples):
-- [Three States: Simple example](#three-states-advanced-example): A single three state item example.
+- [Three States: Simple example](#three-states-simple-example): A single three state item example.
 - [Three States: advanced example 1](#three-states-advanced-example-1): `OR` filtering.
 - [Three States: advanced example 2](#three-states-advanced-example-2): `AND` filtering.
 - [Three States: advanced example 3](#three-states-advanced-example-3): `AND` filtering + `Partial`.
