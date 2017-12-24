@@ -154,7 +154,7 @@ The coastal tile filter is a single [three-state filter](filtering.md#orderable-
 
 ![Coastal filter](assets/select_coastal.png)
 
-- `On`: Filter tiles that are only coastal tiles
+- `On`: Filter only tiles that contain a coast
 - `Off`: Filter tiles that are not coastal tiles
 - `Partial`: both coastal and not coastal tiles match (default behavior)
 
