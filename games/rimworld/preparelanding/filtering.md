@@ -212,12 +212,14 @@ Here are the resulting filtered tiles:
 
 ![road filter: example 1 resulting tiles](assets/exemple_three_state2_3.png)
 
-Now, remember that in Boolean `OR` filtering, each of the items (road types in our case) is applied separately. Thus, the above road filtering means:
+Now, remember that in Boolean `OR` filtering, each of the items (road types in our case) is checked **separately**. If any of the condition is `True` then the tile is considered has a matching tile.
+
+Thus, the above road filtering checks separately for the following conditions:
 - Tile must have a `Ancien Asphalt Highway`
 - Tile must have a `Dirt Path`
-- I do not want tiles with other types of roads.
+- Tile must not have other types of roads.
 
-In our case this match tiles that have `Ancien Asphalt Highway` or `Dirt Path` or both of them!
+If any of the above conditions is true then the tile is included in the matching list (**except** for the tiles that match the `Off` state because this state does **not** select anything). In our case this match tiles that have `Ancien Asphalt Highway` or `Dirt Path` or both of them!
 
 Let's proceed with the boolean `AND` filter, with the exact same conditions:
 
@@ -227,7 +229,7 @@ And here is the result:
 
 ![road filter: example 1 resulting tiles](assets/exemple_three_state2_5.png)
 
-As you can see this time, it only matches tiles that have both `Ancien Asphalt Highway` and `Dirt Path` **at the same time**, and not the other tiles!
+As you can see this time, we have the same condition **but** they are all checked together. Thus the filter only matches tiles that have both `Ancien Asphalt Highway` and `Dirt Path` **at the same time**, and not the other tiles!
 
 ## Three States: advanced example 2
 
